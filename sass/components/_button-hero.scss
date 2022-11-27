@@ -1,0 +1,31 @@
+.button-hero {
+    display: inline-block;
+    min-width: 216px;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+       
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+    text-align: center;
+
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 0px 4px 4px var(--button-hero-shadow-color);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hero-bg-color);    
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+  
+

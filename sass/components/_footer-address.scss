@@ -1,0 +1,27 @@
+.address {
+    padding-left: 0;
+}
+
+.address li {
+    margin-bottom: 9px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.address__text,
+.address__mail,
+.address__tel {
+    font-style: normal;
+    line-height: 1.71;    
+}
+
+.address__text {
+    color: var(--hero-text-color);    
+}
+
+.address__mail,
+.address__tel {
+    color: var(--tel-mail-footer);
+}

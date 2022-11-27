@@ -1,0 +1,42 @@
+.logo {
+    min-width: 145px;
+    min-height: 31px;
+} 
+
+.logo__first-part {
+    color: var(--accent-color);
+}
+            
+.logo__second-part {
+    color: var(--logo__second-part-color);
+}
+
+.logo__first-part,
+.logo__second-part,
+.logo__second-part--footer {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.navigation__logo {    
+    display: flex;
+    
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+    margin-left: 0;
+
+    align-items: center; 
+}
+    
+.logo__second-part--footer {
+    color: var(--hero-text-color);
+}
+    
+.footer__logo {
+padding-left: 0;
+margin-bottom: 20px;
+}
