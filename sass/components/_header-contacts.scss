@@ -1,42 +1,129 @@
 .navigation__contacts-list {
-    display: flex;
+
     padding-left: 0;
-    margin-left: auto;
+    margin-left: auto;   
+    
+    @media screen and (max-width: 767px) {
+        margin-bottom: 64px;
+
+        display: flex;
+	    flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-top: 32px;
+        padding-bottom: 32px;        
+    }    
+    
 }
 
 .navigation__contacts-list li {
+
+    @media screen and (min-width: 1200px) {     
+    
     margin-right: 50px;
 
     &:last-child {
         margin-right: 0;
     }
+    }
+
+    @media screen and (min-width: 768px) {     
+    
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    }
+
+    @media screen and (min-width: 1200px) {     
+    
+    margin-bottom: 0;    
+    } 
+
 }
 
 .navigation__contacts-item {
+
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    @media screen and (min-width: 1200px) {     
+    
+        justify-content: center;    
+    }    
+
+    @media screen and (max-width: 767px) {
+        
+        margin-bottom: 32px;  
+    
+    }
+
 }
 
 .navigation__contacts-link {
     display: flex;
 
     align-items: center; 
-    padding-top: 32px;
-    padding-bottom: 32px;
 
-    font-weight: 500;
-    line-height: 1.14;
+    font-weight: 500;    
     letter-spacing: 0.02em;
 
     color: var(--primary-text-color);
+
+    @media screen and (max-width: 767px) {
+        
+        font-size: 34px;
+        line-height: 1.18;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: 1.17;
+    }  
+
+    &.navigation__phone-link {
+        @media screen and (max-width: 767px) {
+        
+            color: var(--accent-color);   
+        }        
+    }
 }
+
+
 
 .navigation__mail-icon {
 
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+        margin-right: 8px;
+    }
+
+    
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -55,9 +142,22 @@
 
 .navigation__tel-icon {
 
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+        margin-right: 8px;
+    }    
+    
     background-size: cover;
     background-position: center;
     align-items: center;

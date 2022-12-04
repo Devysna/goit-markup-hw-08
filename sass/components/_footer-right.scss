@@ -1,3 +1,31 @@
-.footer__right {
-    margin-left: 93px;
+.footer__right {    
+    
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        top: 187px;         
+    }
+
+    @media screen and (min-width: 1200px) {        
+        right: 0;  
+        top: 12px;
+        width: 570px;  
+    }
 }
+
+.footer__right-text {
+
+    @media screen and (min-width: 768px) {
+        width: 207px;
+        margin-left: 273px;
+    }
+    @media screen and (min-width: 1200px) {        
+        margin-left: 0;            
+    }    
+}
+
+
+    
+
+    
+

@@ -1,5 +1,9 @@
 .work {
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work__list {
@@ -9,6 +13,7 @@
 
 .work__list li {
     margin-right: 30px;
+    width: calc((100% - 3*30px)/3);
 
     &:last-child {
         margin-right: 0;

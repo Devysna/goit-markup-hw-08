@@ -1,11 +1,44 @@
 footer {
     background-color:var(--hero-bg-color);
-    height: 252px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    
+    @media screen and (max-width: 1199px) {
+
+        padding-top: 60px;
+        padding-bottom: 60px;      
+    } 
+
+    @media screen and (min-width: 1200px) {
+
+        padding-top: 61px;
+        padding-bottom: 59px;        
+    } 
+
+
+    @media screen and (max-width: 767px) {        
+        height: 603px;
+    } 
+
+    @media screen and (min-width: 768px) {        
+        height: 463px;   
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 252px;       
+    }
+    
 }
 
 .footer {
-    display: flex;
-    align-items: baseline;
+    
+    @media screen and (max-width: 767px) {
+        align-items: center;       
+        }
+
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;      
+
+        position: relative;        
+    } 
 }

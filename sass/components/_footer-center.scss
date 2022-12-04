@@ -1,5 +1,22 @@
 .footer__center {
-    margin-left: 70px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }  
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+        text-align: center;
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        text-align: left;
+        margin-left: 70px;    
+    }
+    
 }
 
 .footer__text {
@@ -8,8 +25,15 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--hero-text-color);
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 20px;       
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .footer__icon-list {
@@ -47,7 +71,7 @@
     background-color: var(--accent-color);
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    }
 }
 
 .footer__icon {
