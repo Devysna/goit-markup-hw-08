@@ -21,10 +21,17 @@
 
     outline: transparent;    
 
-    max-height: 50px;    
+    max-height: 50px; 
+    
+    
 
     @media screen and (max-width: 1199px) {
         width: 450px;
+        margin-bottom: 20px;       
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
         margin-bottom: 20px;       
     }
 
@@ -77,12 +84,21 @@
 }
 
 .subscription-form__buttom {
-    
+       
     display: flex;
 
-    @media screen and (max-width: 1199px) {
+    
+
+    @media screen and (min-width: 768px) {
         position: absolute;
         left: 125px;        
+    }
+
+    @media screen and (max-width: 767px) {
+        
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;       
     }
 
     @media screen and (min-width: 1200px) {

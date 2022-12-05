@@ -1,4 +1,10 @@
-.footer__right {    
+.footer__right {  
+    
+    @media screen and (max-width: 767px) {
+        
+        text-align: center;
+                
+    }
     
     @media screen and (min-width: 768px) {
         display: block;
