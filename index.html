@@ -19,7 +19,7 @@
         <div class="container navigation">
             <a class="navigation__logo" href="./index.html"><span class="logo"><span class="logo__first-part">Web</span><span class="logo__second-part">Studio</span></span></a>
             <button type="button"
-            class="navigation__button is-open"
+            class="navigation__button"
             aria-expanded="false"
             aria-controls="navigation-container"
             data-menu-button>
@@ -28,7 +28,7 @@
                     <use class="navigation__icon-menu" href="./images/icons.svg#icon-menu"></use>                                       
                 </svg>
             </button>
-            <div class="navigation__container is-open" id="navigation-container" data-menu>                  
+            <div class="navigation__container" id="navigation-container" data-menu>                  
                 <nav>
                     <ul class="navigation__main-list">
                         <li><a class="navigation__link navigation__link--current" href="./index.html">Студія</a></li>
@@ -174,20 +174,41 @@
             <ul class="work__list">
                 <li>
                     <div class="work__thumb">
-                         <img src="./images/case-a.jpg" alt="website development" width="370" height="294">
-                         <h3 class="work__title-block work__title">Десктопні додатки</h3>
+                        <img
+                        srcset="
+                        ./images/work-a-370-1x.jpg 1x,
+                        ./images/work-a-370-2x.jpg 2x                        
+                        "                                        
+                        src="./images/work-a-370-1x.jpg"
+                        alt="Desktop Apps"
+                        width="370">                         
+                        <h3 class="work__title-block work__title">Десктопні додатки</h3>
                     </div>
                 </li>
                 <li>
                     <div class="work__thumb">
-                         <img src="./images/case-b.jpg" alt="development of mobile applications" width="370" height="294">
+                        <img
+                        srcset="
+                        ./images/work-b-370-1x.jpg 1x,
+                        ./images/work-b-370-2x.jpg 2x                        
+                        "                                        
+                        src="./images/work-b-370-1x.jpg"
+                        alt="development of mobile applications"
+                        width="370">                             
                          <h3 class="work__title-block work__title">Мобільні додатки</h3>
                     </div>
                 </li>
                 <li>
                     <div class="work__thumb">
-                         <img src="./images/case-c.jpg" alt="website design" width="370" height="294">
-                         <h3 class="work__title-block work__title">Дизайнерські рішення</h3>
+                        <img
+                        srcset="
+                        ./images/work-c-370-1x.jpg 1x,
+                        ./images/work-c-370-2x.jpg 2x                        
+                        "                                        
+                        src="./images/work-c-370-1x.jpg"
+                        alt="website design"
+                        width="370">                         
+                        <h3 class="work__title-block work__title">Дизайнерські рішення</h3>
                     </div>
                 </li>
             </ul>
@@ -198,7 +219,19 @@
             <h2 class="secton-title">Наша команда</h2>
             <ul class="team__list">
                 <li class="team__item">
-                    <img src="./images/team-a.jpg" alt="Product Designer" width="270" height="260">
+                    <img
+                        srcset="
+                        ./images/demyanenko-450-1x.jpg 450w,
+                        ./images/demyanenko-450-2x.jpg 450w,
+                        ./images/demyanenko-tab-1x.jpg 354w,
+                        ./images/demyanenko-tab-2x.jpg 354w,
+                        ./images/demyanenko-dt-1x.jpg 270w,
+                        ./images/demyanenko-dt-2x.jpg 270w
+                        "  
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"                  
+                    src="./images/demyanenko-450-1x.jpg"
+                    alt="Product Designer"
+                    width="450">
                     <div class="team__description">
                     <h3 class="team__title">Ігор Дем'яненко</h3>
                     <p class="team__text">Product Designer</p>            
@@ -237,8 +270,20 @@
                     </ul>
                     </div>
                 </li>
-                <li class="team__item">
-                    <img src="./images/team-b.jpg" alt="Frontend Developer" width="270" height="260">
+                <li class="team__item">                    
+                    <img
+                        srcset="
+                        ./images/repina-450-1x.jpg 450w,
+                        ./images/repina-450-2x.jpg 450w,
+                        ./images/repina-tab-1x.jpg 354w,
+                        ./images/repina-tab-2x.jpg 354w,
+                        ./images/repina-dt-1x.jpg 270w,
+                        ./images/repina-dt-2x.jpg 270w
+                        "                 
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"                 
+                    src="./images/repina-450-1x.jpg"
+                    alt="Product Designer"
+                    width="450">
                     <div class="team__description">
                     <h3 class="team__title">Ольга Рєпіна</h3>
                     <p class="team__text">Frontend Developer</p>
@@ -278,7 +323,19 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/team-c.jpg" alt="Marketing" width="270" height="260">
+                    <img
+                        srcset="
+                        ./images/tarasov-450-1x.jpg 450w,
+                        ./images/tarasov-450-2x.jpg 450w,
+                        ./images/tarasov-tab-1x.jpg 354w,
+                        ./images/tarasov-tab-2x.jpg 354w,
+                        ./images/tarasov-dt-1x.jpg 270w,
+                        ./images/tarasov-dt-2x.jpg 270w
+                        "      
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"                            
+                    src="./images/tarasov-450-1x.jpg"
+                    alt="Marketing"
+                    width="450">                    
                     <div class="team__description">
                     <h3 class="team__title">Микола Тарасов</h3>
                     <p class="team__text">Marketing</p>
@@ -318,7 +375,19 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/team-b.jpg" alt="UI Designer" width="270" height="260">
+                    <img
+                        srcset="
+                        ./images/yermakov-450-1x.jpg 450w,
+                        ./images/yermakov-450-2x.jpg 450w,
+                        ./images/yermakov-tab-1x.jpg 354w,
+                        ./images/yermakov-tab-2x.jpg 354w,
+                        ./images/yermakov-dt-1x.jpg 270w,
+                        ./images/yermakov-dt-2x.jpg 270w
+                        "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"                                  
+                    src="./images/yermakov-450-1x.jpg"
+                    alt="UI Designer"
+                    width="450">                    
                     <div class="team__description">
                     <h3 class="team__title">Михайло Єрмаков</h3>
                     <p class="team__text">UI Designer</p>
